@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Movie Project - Login/Register</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Cinema Stack</h1>
+	<div class="top-image-container">
+		<img src="vintage-film.webp" alt="Top Image" class="top-image">
+	</div>
+	<div class="container" id="login-container">
+		<h2>Login</h2>
+		<form id="login-form">
+			<label for="login-username">Username</label>
+			<input type="text" id="login-username" name="username" required>
+			<label for="login-password">Password</label>
+			<input type="password" id="login-password" name="password" required>
+			<button type="submit">Login</button>
+		</form>
+		<div class="switch-link">
+			<span>Don't have an account? <a href="#" id="show-register">Register</a></span>
+		</div>
+	</div>
+
+	<div class="container" id="register-container" style="display:none;">
+		<h2>Register</h2>
+		<form id="register-form">
+			<label for="register-username">Username</label>
+			<input type="text" id="register-username" name="username" required>
+			<label for="register-email">Email</label>
+			<input type="email" id="register-email" name="email" required>
+			<label for="register-password">Password</label>
+			<input type="password" id="register-password" name="password" required>
+			<button type="submit">Register</button>
+		</form>
+		<div class="switch-link">
+			<span>Already have an account? <a href="#" id="show-login">Login</a></span>
+		</div>
+	</div>
+
+	<!-- Search Page (hidden by default) -->
+	<div class="container" id="search-container">
+				<div class="search-header">
+					<h2>Search Movies</h2>
+				</div>
+				<div class="search-input-wrapper">
+					<input type="text" id="search-input" placeholder="Search for a movie...">
+					<span class="search-icon">
+						<svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						  <circle cx="11" cy="11" r="8"/>
+						  <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+						</svg>
+					</span>
+				</div>
+		
+		<div id="movie-list">
+			<h3>Available Movies</h3>
+			<ul>
+				<li>The Shawshank Redemption</li>
+				<li>The Godfather</li>
+				<li>The Dark Knight</li>
+				<li>Pulp Fiction</li>
+				<li>Forrest Gump</li>
+				<li>Inception</li>
+			</ul>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
