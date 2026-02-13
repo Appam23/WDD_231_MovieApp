@@ -66,7 +66,5 @@ document.getElementById('login-form').onsubmit = function(e) {
 };
 document.getElementById('register-form').onsubmit = function(e) {
     e.preventDefault();
-    alert('Registration submitted successfully!');
-    registerContainer.style.display = 'none';
-    loginContainer.style.display = 'block';
+    alert('Registration submitted!');
 };
