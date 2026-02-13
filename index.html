@@ -7,7 +7,12 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<h1>Cinema Stack</h1>
+   <header>
+	   <div class="header-content">
+		   <img src="images/Logo.png" alt="Cinema Stack Logo" class="logo">
+		   <h1>Welcome !!</h1>
+	   </div>
+   </header>
 	<div class="top-image-container">
 		<img src="./images/vintage-film.webp" alt="Top Image" class="top-image">
 	</div>
@@ -43,9 +48,10 @@
 
 	<!-- Search Page (hidden by default) -->
 	<div class="container" id="search-container">
-				<div class="search-header">
-					<h2>Search Movies</h2>
-				</div>
+				   <div class="search-header">
+					   <button id="back-btn">&larr; Back</button>
+					   <h2 style="clear:both;">Search Movies</h2>
+				   </div>
 				<div class="search-input-wrapper">
 					<input type="text" id="search-input" placeholder="Search for a movie...">
 					<span class="search-icon">
@@ -55,19 +61,35 @@
 						</svg>
 					</span>
 				</div>
+				
 		
-		<div id="movie-list">
-			<h3>Available Movies</h3>
-			<ul>
-				<li>The Shawshank Redemption</li>
-				<li>The Godfather</li>
-				<li>The Dark Knight</li>
-				<li>Pulp Fiction</li>
-				<li>Forrest Gump</li>
-				<li>Inception</li>
-			</ul>
-		</div>
+		   <div id="movie-list">
+			   <label for="genre-select" style="font-weight:bold;">Genre:</label>
+			   <select id="genre-select" name="genre">
+				   <option value="all">All</option>
+				   <option value="drama">Drama</option>
+				   <option value="crime">Crime</option>
+				   <option value="action">Action</option>
+				   <option value="thriller">Thriller</option>
+				   <option value="comedy">Comedy</option>
+				   <option value="sci-fi">Sci-Fi</option>
+			   </select>
+			   <ul id="movie-list-main">
+				   <li data-genre="drama"><img src="images/SR.jpg" alt="The Shawshank Redemption Poster" class="movie-icon"><span>The Shawshank Redemption</span></li>
+				   <li data-genre="crime"><img src="images/GF.jpeg" alt="The Godfather Poster" class="movie-icon"><span>The Godfather</span></li>
+				   <li data-genre="action"><img src="images/DN.jpg" alt="The Dark Knight Poster" class="movie-icon"><span>The Dark Knight</span></li>
+				   <li data-genre="thriller"><img src="images/PF.jpg" alt="Pulp Fiction Poster" class="movie-icon"><span>Pulp Fiction</span></li>
+				   <li data-genre="comedy"><img src="images/FG.jpg" alt="Forrest Gump Poster" class="movie-icon"><span>Forrest Gump</span></li>
+				   <li data-genre="sci-fi"><img src="images/IN.jpg" alt="Inception Poster" class="movie-icon"><span>Inception</span></li>
+			   </ul>
+		   </div>
+		   
 	</div>
-	<script src="js/script.js"></script>
+	   <script src="js/script.js"></script>
+	   <footer>
+		   <div class="footer-content">
+			   <p>&copy; 2026 Cinema Stack. All rights reserved.</p>
+		   </div>
+	   </footer>
 </body>
 </html>

@@ -1,0 +1,101 @@
+/* Home icon button for genre results */
+.genre-home-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    padding: 4px 0 8px 0;
+    margin-bottom: 8px;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+}
+.genre-home-btn svg {
+    display: block;
+    width: 32px;
+    height: 32px;
+    transition: stroke 0.2s;
+}
+.genre-home-btn:hover svg, .genre-home-btn:focus svg {
+    stroke: #0e8882;
+}
+
+/* Genre results page styles */
+#genre-results {
+    margin-top: 24px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    padding: 16px 6px 10px 6px;
+    max-width: 420px;
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#genre-title {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 18px;
+    color: #007bff;
+    letter-spacing: 1px;
+}
+#genre-movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 24px 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 90%;
+}
+#genre-movie-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    padding: 16px 8px 8px 8px;
+    font-size: 1.08em;
+    min-height: 180px;
+}
+#genre-results #genre-back-btn {
+    background: #2bff00;
+    color: #040404;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-bottom: 18px;
+    outline: none;
+    align-self: flex-start;
+}
+#genre-results #genre-back-btn:focus, #genre-results #genre-back-btn:hover {
+    background: #0056b3;
+}
+@media (max-width: 600px) {
+    #genre-results {
+        padding: 8px 0 6px 0;
+        max-width: 98vw;
+    }
+    #genre-title {
+        font-size: 1.15em;
+    }
+    #genre-movie-list {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 16px 8px;
+    }
+    #genre-movie-list li {
+        min-height: 120px;
+        font-size: 1em;
+    }
+    #genre-results #genre-back-btn {
+        width: 100%;
+        font-size: 1.1em;
+        margin-bottom: 14px;
+    }
+}

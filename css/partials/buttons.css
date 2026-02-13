@@ -1,0 +1,58 @@
+/* Button styles */
+button {
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background: #0056b3;
+}
+#back-btn {
+    background: hsl(171, 100%, 50%);
+    color: #181515;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-bottom: 12px;
+    float: left;
+    outline: none;
+}
+#back-btn:focus, #back-btn:hover {
+    background: #0056b3;
+}
+@media (max-width: 600px) {
+    #back-btn {
+        width: 100%;
+        float: none;
+        font-size: 1.1em;
+        padding: 12px 0;
+        margin-bottom: 16px;
+    }
+}
+.genre-home-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    padding: 4px 0 8px 0;
+    margin-bottom: 8px;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+}
+.genre-home-btn svg {
+    display: block;
+    width: 32px;
+    height: 32px;
+    transition: stroke 0.2s;
+}
+.genre-home-btn:hover svg, .genre-home-btn:focus svg {
+    stroke: #0e8882;
+}
