@@ -53,20 +53,20 @@ svg{
 }
 /* Top image styles */
 .top-image-container {
-	max-width: 400px;
-	margin: 40px auto 0 auto;
+	max-width: 300px;
+	
 	text-align: center;
 }
 .top-image {
 	width: 100%;
 	max-width: 200px;
-	margin-bottom: 24px;
+	
 	border-radius: 8px;
 	box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
     body {
-        font-family: Arial, sans-serif;
-        background: #f4f4f4;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #d8cfcf;
         margin: 0;
         padding: 0;
         min-height: 100vh;
@@ -92,7 +92,8 @@ svg{
 
 h2 { text-align: center; margin-bottom: 24px; }
 form { display: flex; flex-direction: column; }
-label { margin-bottom: 8px; }
+label { margin-bottom: 8px; 
+ color: green;}
 input[type="text"], input[type="password"], input[type="email"] 
 { padding: 8px; margin-bottom: 16px; border: 1px solid #ccc; 
     border-radius: 4px; }

@@ -4,12 +4,17 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Movie Project - Login/Register</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<h1>Cinema Stack</h1>
+   <header>
+	   <div class="header-content">
+		   <img src="images/Logo.png" alt="Cinema Stack Logo" class="logo">
+		   <h1>Welcome !!</h1>
+	   </div>
+   </header>
 	<div class="top-image-container">
-		<img src="vintage-film.webp" alt="Top Image" class="top-image">
+		<img src="./images/vintage-film.webp" alt="Top Image" class="top-image">
 	</div>
 	<div class="container" id="login-container">
 		<h2>Login</h2>
@@ -43,9 +48,10 @@
 
 	<!-- Search Page (hidden by default) -->
 	<div class="container" id="search-container">
-				<div class="search-header">
-					<h2>Search Movies</h2>
-				</div>
+				   <div class="search-header">
+					   
+					   <h2 style="clear:both;">Search Movies</h2>
+				   </div>
 				<div class="search-input-wrapper">
 					<input type="text" id="search-input" placeholder="Search for a movie...">
 					<span class="search-icon">
@@ -56,18 +62,34 @@
 					</span>
 				</div>
 		
-		<div id="movie-list">
-			<h3>Available Movies</h3>
-			<ul>
-				<li>The Shawshank Redemption</li>
-				<li>The Godfather</li>
-				<li>The Dark Knight</li>
-				<li>Pulp Fiction</li>
-				<li>Forrest Gump</li>
-				<li>Inception</li>
-			</ul>
-		</div>
+		   <div id="movie-list">
+			   <label for="genre-select" style="font-weight:bold;">Genre:</label>
+			   <select id="genre-select" name="genre">
+				   <option value="all">All</option>
+				   <option value="drama">Drama</option>
+				   <option value="crime">Crime</option>
+				   <option value="action">Action</option>
+				   <option value="thriller">Thriller</option>
+				   <option value="comedy">Comedy</option>
+				   <option value="sci-fi">Sci-Fi</option>
+			   </select>
+			   <ul>
+				   <li><img src="images/SR.jpg" alt="Movie Icon" class="movie-icon"> The Shawshank Redemption</li>
+				   <li><img src="images/GF.jpeg" alt="Movie Icon" class="movie-icon"> The Godfather</li>
+				   <li><img src="images/DN.jpg" alt="Movie Icon" class="movie-icon"> The Dark Knight</li>
+				   <li><img src="images/PF.jpg" alt="Movie Icon" class="movie-icon"> Pulp Fiction</li>
+				   <li><img src="images/FG.jpg" alt="Movie Icon" class="movie-icon"> Forrest Gump</li>
+				   <li><img src="images/IN.jpg" alt="Movie Icon" class="movie-icon"> Inception</li>
+			   </ul>
+			   <hr>
+			   <button id="back-btn">&larr; Back</button>
+		   </div>
 	</div>
-	<script src="script.js"></script>
+	   <script src="js/script.js"></script>
+	   <footer>
+		   <div class="footer-content">
+			   <p>&copy; 2026 Cinema Stack. All rights reserved.</p>
+		   </div>
+	   </footer>
 </body>
 </html>

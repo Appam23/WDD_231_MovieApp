@@ -1,0 +1,10 @@
+/* HR styles */
+hr {
+    border: none;
+    border-top: 3px solid #09b300;
+    margin: 24px 0 24px 0;
+    height: 0;
+    background: transparent;
+    width: 100%;
+    max-width: 100vw;
+}
