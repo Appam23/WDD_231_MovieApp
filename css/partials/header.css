@@ -38,3 +38,22 @@ header h1 {
     display: inline-block;
 }
 
+.logo img{
+    height: 48px;
+    width: 48px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    margin-right: -20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
