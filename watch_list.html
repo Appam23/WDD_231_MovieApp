@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/watchlist.css">
+    <link rel="stylesheet" href="css/partials/header.css">
+    <link rel="stylesheet" href="css/partials/movie-list.css">
+    <link rel="stylesheet" href="css/partials/buttons.css">
+    <link rel="stylesheet" href="css/partials/footer.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="links">
+            <a href="genre.html" class="logo"><img class="movie-icon" src="images/Logo.png" alt="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="genre.html">Home</a></li>
+                    <li><a href="watch_list.html">Watch List</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>My Watch List</h1>
+        <label for="sorting">Sort by:</label>
+        <select id="sorting">
+            <option value="title">Title</option>
+            <option value="year">Year</option>
+            <option value="rating">Rating</option>
+        </select>
+        <ul id="movie-list">
+            <li class="list-item">
+                <div class="thumbnail">
+                    <img id="image" src="images/DN.jpg" alt="Movie Thumbnail">
+                </div>
+                <div class="item-content">
+                    <p class="title">The Dark Knight (2008)</p>
+                    <button class="bookmark-icon" aria-label="bookmark"></button>
+                </div>
+            </li>
+            <li class="list-item">
+                <div class="thumbnail">
+                    <img id="image" src="images/FG.jpg" alt="Movie Thumbnail">
+                </div>
+                <div class="item-content">
+                    <p class="title">Forrest Gump (1994)</p>
+                    <button class="bookmark-icon" aria-label="bookmark"></button>
+                </div>
+            </li>
+            <li class="list-item">
+                <div class="thumbnail">
+                    <img id="image" src="images/GF.jpeg" alt="Movie Thumbnail">
+                </div>
+                <div class="item-content">
+                    <p class="title">The Godfather (1972)</p>
+                    <button class="bookmark-icon" aria-label="bookmark"></button>
+                </div>
+            </li>
+            <li class="list-item">
+                <div class="thumbnail">
+                    <img id="image" src="images/SR.jpg" alt="Movie Thumbnail">
+                </div>
+                <div class="item-content">
+                    <p class="title">The Shawshank Redemption (1994)</p>
+                    <button class="bookmark-icon" aria-label="bookmark"></button>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2026 Cinema Stack. All rights reserved.</p>
+    </footer>
+</body>
+</html>
